@@ -28,7 +28,7 @@ body {
 
 header {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 header .logo {
@@ -37,5 +37,47 @@ header .logo {
 
 header .logo img {
   width: 200px;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .col-left {
+  width: 60%;
+}
+
+main .container .col-left img {
+  width: 100%;
+}
+
+main .container .col-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 2.75rem;
+  padding-top: 2.75rem;
+}
+
+main .container .col-right .heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+main .container .col-right .lead {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+main .container .col-right .btn {
+  font-size: 1.1rem;
+  padding: 15px 60px;
+  border-radius: 50px;
+  color: #777777;
+  -webkit-box-shadow: 0 2px 7px #333333;
+          box-shadow: 0 2px 7px #333333;
 }
 /*# sourceMappingURL=style.css.map */
