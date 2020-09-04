@@ -21,5 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-color: #674bb1;
   color: #ffffff;
+  background-image: url("/dist/img/bg-desktop.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header .logo img {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */

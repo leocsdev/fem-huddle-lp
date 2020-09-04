@@ -1,4 +1,23 @@
 body {
   background-color: $purple;
   color: #ffffff;
+
+  background-image: url('/dist/img/bg-desktop.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+
+header {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  
+  .logo {
+    display: inline-block;
+
+    img {
+      width: 200px;
+    }
+  }
 }
