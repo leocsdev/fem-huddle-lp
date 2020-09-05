@@ -117,7 +117,7 @@ main .main-content .col-right a.cta {
           box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   main {
     min-height: 70vh;
   }
