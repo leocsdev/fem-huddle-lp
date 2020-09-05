@@ -6,11 +6,12 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  padding: 65px 80px 40px 80px;
 }
 
 header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   
   .logo {
     display: inline-block;
@@ -23,13 +24,12 @@ header {
 }
 
 main {
-  padding-bottom: 25px;
-
-  .container-content {
+  .main-content {
     display: flex;
 
     .col-left {
       max-width: 700px;
+      // flex: 1;
       img {
         
         width: 100%;
@@ -38,40 +38,36 @@ main {
   
     .col-right {
       flex: 1;
-      padding-left: 4rem;
-      padding-top: 2.75rem;
-
+      padding-left: 60px;
+      
       .heading {
-        font-size: 2.5rem;
-        font-weight: 500;
-        margin-bottom: 24px;
+        font-size: 32px;
+        font-weight: bold;
+        // margin-bottom: 24px;
       }
 
       .lead {
-        margin-bottom: 2rem;
-
-        font-size: 1.12rem;
-        font-weight: 100;
+        margin-bottom: 30px;
+        font-size: 18px;
       }
 
-      .btn {
-        background-color: #ffffff;
-        color: #777777;
-
-        font-size: 1.1rem;
-        padding: 15px 60px;
-        border-radius: 50px;
-
+      a.cta {
+        display: inline-block;
         
+        background-color: #ffffff;
+        color: $purple;
 
-        box-shadow: 0 2px 7px rgba(51, 51, 51, 0.5);
+        border-radius: 30px;
+        padding: 20px 66px;
+
+        box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
       }
     }
   }
 }
 
 footer {
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
 
   .footer-content {
     display: flex;
@@ -80,13 +76,15 @@ footer {
 
     .social {
       .fab {
-        margin-right: 1rem; 
-  
+        margin-right: 16px; 
+        font-size: 20px;
+
         height: 40px;
         width: 40px;
         line-height: 40px;
         text-align: center;
-  
+        
+
         border: 1px solid #ffffff;
         border-radius: 50%;
 

@@ -1,8 +1,15 @@
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body, html {
   margin: 0;
   padding: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
 }
 
 .container {
@@ -25,11 +32,11 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 65px 80px 40px 80px;
 }
 
 header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 header .logo {
@@ -41,56 +48,45 @@ header .logo img {
   width: 100%;
 }
 
-main {
-  padding-bottom: 25px;
-}
-
-main .container-content {
+main .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .container-content .col-left {
+main .main-content .col-left {
   max-width: 700px;
 }
 
-main .container-content .col-left img {
+main .main-content .col-left img {
   width: 100%;
 }
 
-main .container-content .col-right {
+main .main-content .col-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 4rem;
-  padding-top: 2.75rem;
+  padding-left: 60px;
 }
 
-main .container-content .col-right .heading {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 24px;
+main .main-content .col-right .heading {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-main .container-content .col-right .lead {
-  margin-bottom: 2rem;
-  font-size: 1.12rem;
-  font-weight: 100;
+main .main-content .col-right .lead {
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 
-main .container-content .col-right .btn {
+main .main-content .col-right a.cta {
+  display: inline-block;
   background-color: #ffffff;
-  color: #777777;
-  font-size: 1.1rem;
-  padding: 15px 60px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 2px 7px rgba(51, 51, 51, 0.5);
-          box-shadow: 0 2px 7px rgba(51, 51, 51, 0.5);
-}
-
-footer {
-  padding-bottom: 25px;
+  color: #674bb1;
+  border-radius: 30px;
+  padding: 20px 66px;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
+          box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
 }
 
 footer .footer-content {
@@ -103,7 +99,8 @@ footer .footer-content {
 }
 
 footer .footer-content .social .fab {
-  margin-right: 1rem;
+  margin-right: 16px;
+  font-size: 20px;
   height: 40px;
   width: 40px;
   line-height: 40px;
