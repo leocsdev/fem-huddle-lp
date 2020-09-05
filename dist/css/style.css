@@ -35,6 +35,18 @@ body {
   padding: 65px 80px 40px 80px;
 }
 
+@media screen and (max-width: 992px) {
+  body {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("/dist/img/bg-mobile.svg");
+  }
+}
+
 header {
   padding-bottom: 100px;
 }
@@ -48,6 +60,19 @@ header .logo img {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    padding-bottom: 70px;
+  }
+  header .logo {
+    width: 120px;
+  }
+}
+
+main {
+  margin-bottom: 25px;
+}
+
 main .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +81,9 @@ main .main-content {
 
 main .main-content .col-left {
   max-width: 700px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 main .main-content .col-left img {
@@ -89,6 +117,49 @@ main .main-content .col-right a.cta {
           box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
 }
 
+@media screen and (max-width: 992px) {
+  main {
+    min-height: 70vh;
+  }
+  main .col-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-bottom: 65px;
+  }
+  main .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main-content .col-left {
+    padding-bottom: 70px;
+  }
+  main .main-content .col-right {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  main .main-content .col-right .heading {
+    font-size: 28px;
+  }
+}
+
 footer .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,5 +182,13 @@ footer .footer-content .social .fab {
 
 footer .footer-content .social .fab:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
