@@ -71,14 +71,19 @@ main {
 
       a.cta {
         display: inline-block;
-        
         background-color: #ffffff;
         color: $purple;
-
         border-radius: 30px;
         padding: 20px 66px;
-
         box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $purple;
+          // border: 1px solid #ffffff;
+          color: #ffffff;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -117,31 +122,40 @@ main {
 }
 
 footer {
-  // padding-bottom: 25px;
-
   .footer-content {
     display: flex;
     justify-content: flex-end;
-    // align-items: center;
-
+    
     .social {
-      .fab {
+      a {
         margin-right: 16px; 
-        font-size: 20px;
-
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        text-align: center;
-        
-
-        border: 1px solid #ffffff;
-        border-radius: 50%;
 
         &:last-child {
           margin-right: 0;
         }
+
+        .fab {
+          color: #ffffff; 
+          
+          font-size: 20px;
+  
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          text-align: center;
+  
+          border: 1px solid #ffffff;
+          border-radius: 50%;
+          transition: all 0.3s;
+  
+          &:hover {
+            background-color: #ffffff;
+            border-color: $purple;
+            color: $purple;
+          }
+        }
       }
+      
     }
   }
 

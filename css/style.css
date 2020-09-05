@@ -115,6 +115,14 @@ main .main-content .col-right a.cta {
   padding: 20px 66px;
   -webkit-box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
           box-shadow: 0 5px 10px 2px rgba(51, 51, 51, 0.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main .main-content .col-right a.cta:hover {
+  background-color: #674bb1;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
@@ -169,8 +177,16 @@ footer .footer-content {
           justify-content: flex-end;
 }
 
-footer .footer-content .social .fab {
+footer .footer-content .social a {
   margin-right: 16px;
+}
+
+footer .footer-content .social a:last-child {
+  margin-right: 0;
+}
+
+footer .footer-content .social a .fab {
+  color: #ffffff;
   font-size: 20px;
   height: 40px;
   width: 40px;
@@ -178,10 +194,14 @@ footer .footer-content .social .fab {
   text-align: center;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-footer .footer-content .social .fab:last-child {
-  margin-right: 0;
+footer .footer-content .social a .fab:hover {
+  background-color: #ffffff;
+  border-color: #674bb1;
+  color: #674bb1;
 }
 
 @media screen and (max-width: 768px) {
