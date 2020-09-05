@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-color: #674bb1;
   color: #ffffff;
-  background-image: url("/img/bg-desktop.svg");
+  background-image: url("../img/bg-desktop.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +43,7 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    background-image: url("/img/bg-mobile.svg");
+    background-image: url("../img/bg-mobile.svg");
   }
 }
 
