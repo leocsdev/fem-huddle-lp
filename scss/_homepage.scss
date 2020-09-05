@@ -2,7 +2,7 @@ body {
   background-color: $purple;
   color: #ffffff;
 
-  background-image: url('/dist/img/bg-desktop.svg');
+  background-image: url('/img/bg-desktop.svg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@ body {
   }
 
   @media screen and (max-width: 768px) {
-    background-image: url('/dist/img/bg-mobile.svg');
+    background-image: url('/img/bg-mobile.svg');
   }
 }
 
